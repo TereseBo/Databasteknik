@@ -3,7 +3,7 @@ var mysql = require('mysql2');
 var connection = mysql.createConnection({//f() för att koppla upp till db med specificerade uppgifter
 host : 'localhost',
 user : 'root',
-password : 'krakekrake', // <-- ALDRIG NÅGRA LÖSENORD I KOD I PRODUKTION
+password : 'superhemligt', // <-- ALDRIG NÅGRA LÖSENORD I KOD I PRODUKTION
 database : 'Databasteknik',
 //insecureAuth : true
 });

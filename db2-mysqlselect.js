@@ -14,7 +14,7 @@ function errResHandler(error, result, fields){
 let connection = mysql.createConnection({
 host : 'localhost',
 user : 'root',
-password : 'krakekrake',
+password : 'superhemligt',
 database : 'Databasteknik',
 insecureAuth : true
 });
@@ -30,6 +30,6 @@ connection.query("select * from Employee where Job = ?", ['Analytiker'], functio
 if (error) throw error;//Uppdatera till förra exemplet
 printarray(result);
 });
-connection.query("select * from Employee where Job = ?", ['Analytiker'],()=> errResHandler.errResHandler);
+connection.query("select * from Employee where Job = ?", ['Analytiker'],()=> errResHandler);
 
 connection.end();
